@@ -1,3 +1,4 @@
+from crispy_forms.helper import FormHelper
 from django import forms
 from django.core.exceptions import ValidationError
 from django.forms import formset_factory
@@ -72,6 +73,13 @@ class SearchForm(forms.Form):
         )
     )
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.helper = FormHelper()
+        self.helper.form_method = 'post'
+        self.helper.form_class = 'inline'
+
 
 class CommentForm(forms.ModelForm):
     class Meta:
@@ -103,6 +111,7 @@ class CommentForm(forms.ModelForm):
         self.fields['content'].widget.attrs.update({
             'class': 'form-control',
             'placeholder': 'Add message...',
+            'row': 1,
         })
 
 CommentFormSet = formset_factory(CommentForm, extra=1)

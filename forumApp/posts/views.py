@@ -39,7 +39,7 @@ def dashboard(request):
 
 
 def add_post(request):
-    form = PostCreateForm(request.POST or None)
+    form = PostCreateForm(request.POST or None, request.FILES or None)
 
     if request.method == "POST":
         if form.is_valid():
