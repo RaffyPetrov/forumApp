@@ -7,8 +7,10 @@
         <h1>Hello user!</h1>
     {% enduppercase %}
     
-    <form>
+    <form method="post">
         {{ my_form }}
+        {% csrf_token %}
+        <button>Submit</button>
     </form>
 
     

@@ -1,24 +1,60 @@
+from django import views
 from django.forms import modelform_factory
+from django.http import HttpResponseNotAllowed
 from django.shortcuts import render, redirect
+from django.utils.decorators import classonlymethod
+
 from forumApp.posts.forms import PostCreateForm, PostDeleteForm, SearchForm, PostEditForm, CommentFormSet
 from forumApp.posts.models import Post
 
 
-def index(request):
-    post_form = modelform_factory(
-        Post,
-        fields=('title', 'content', 'author', 'languages'),
-        error_messages={
-            'title': {
-                'required': 'Title is required!!',
-            }
-        }
-    )
-    context = {
-        "my_form": post_form,
-    }
+class BaseView:
+    @classonlymethod
+    def as_view(cls):
 
-    return render(request, 'common/index.html', context)
+        def view(request, *args, **kwargs):
+            view_instance = cls()
+            return view_instance.dispatch(request, *args, **kwargs)
+        return view
+
+    def get(self, request, *args, **kwargs):
+        return HttpResponseNotAllowed(['GET'])
+
+    def post(self, request, *args, **kwargs):
+        return HttpResponseNotAllowed(['POST'])
+
+    def dispatch(self, request, *args, **kwargs):
+        if request.method == "GET":
+            return self.get(request, *args, **kwargs)
+        elif request.METHOD == "POST":
+            return self.post(request, *args, **kwargs)
+
+
+class Index(BaseView):
+
+    def get(self, request, *args, **kwargs):
+        post_form = modelform_factory(
+            Post,
+            fields=('title', 'content', 'author', 'languages'),
+        )
+
+        context = {
+            "my_form": post_form,
+        }
+
+        return render(request, 'common/index.html', context)
+
+# def index(request):
+#     post_form = modelform_factory(
+#         Post,
+#         fields=('title', 'content', 'author', 'languages'),
+#     )
+#
+#     context = {
+#         "my_form": post_form,
+#     }
+#
+#     return render(request, 'common/index.html', context)
 
 
 def dashboard(request):
