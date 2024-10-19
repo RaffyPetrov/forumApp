@@ -3,13 +3,13 @@
 
 
 {% block content %}
-    {% uppercase %}
-        <h1>Hello user!</h1>
-    {% enduppercase %}
+	{% uppercase %}
+		<h1>Hello user!</h1>
+	{% enduppercase %}
 
-    <h1>You are logged in</h1>
-    
-    {{ static_time|time:'s' }}
-    {{ dynamic_time|time: 's' }}
+	<h1>You are logged in</h1>
+
+	{{ static_time|time:'s' }}
+	{{ dynamic_time|time: 's' }}
 
 {% endblock %}
