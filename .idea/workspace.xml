@@ -259,10 +259,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Django Server.forumApp" />
       <item itemvalue="Django tests.Unnamed" />
       <item itemvalue="Python.decorators" />
       <item itemvalue="Python.views" />
-      <item itemvalue="Django Server.forumApp" />
     </list>
     <recent_temporary>
       <list>
