@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ce96bb-833f-4aa0-b136-8e74d483af79" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forumApp/posts/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/posts/mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forumApp/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/posts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forumApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +56,8 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Django Server.forumApp.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
+    "Notification.DoNotAsk-Database detector": "true",
     "Python.decorators.executor": "Run",
     "Python.urls.executor": "Run",
     "Python.views.executor": "Debug",
@@ -68,6 +74,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.intellij.python.django.customization.DjangoModulesConfigurable",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Django Server.forumApp">
@@ -286,7 +297,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="93b1462e-6b21-4b35-9333-d1748f5b1ada" name="Changes" comment="" />
+      <changelist id="89ce96bb-833f-4aa0-b136-8e74d483af79" name="Changes" comment="" />
       <created>1728914207620</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -304,6 +315,12 @@
       <workItem from="1729412127062" duration="147000" />
       <workItem from="1730308646439" duration="238000" />
       <workItem from="1730308892246" duration="114000" />
+      <workItem from="1730310157428" duration="170000" />
+      <workItem from="1730311042894" duration="617000" />
+      <workItem from="1730473741503" duration="2647000" />
+      <workItem from="1730478322889" duration="896000" />
+      <workItem from="1730481012746" duration="4441000" />
+      <workItem from="1730485804427" duration="268000" />
     </task>
     <servers />
   </component>

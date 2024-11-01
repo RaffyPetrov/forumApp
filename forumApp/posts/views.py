@@ -31,7 +31,7 @@ class BaseView:
 @method_decorator(measure_execution_time, name='dispatch')
 class IndexView(TimeRestrictedMixin, TemplateView):
     template_name = 'common/index.html'
-    end_time = time(15, 43)
+    end_time = time(23, 59)
     extra_context = {
         'static_time': datetime.now(),
     }  # static way
