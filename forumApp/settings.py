@@ -93,7 +93,7 @@ DATABASES = {
 
 AUTHENTICATION_BACKENDS = [
     'forumApp.accounts.authentication.EmailOrUserNameBackend',
-    'django.contrib.auth.backends.ModelBackend',   # not really needed because we check for username in the email or username but it's safer to have it
+    'django.contrib.auth.backends.ModelBackend',
 ]
 
 AUTH_PASSWORD_VALIDATORS = [
