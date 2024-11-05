@@ -1,4 +1,6 @@
 from datetime import datetime, time
+
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.forms import modelform_factory
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
@@ -43,7 +45,7 @@ class IndexView(TimeRestrictedMixin, TemplateView):
 
         return context
 
-    def get_template_name(self):
+    def get_template_names(self):
         if self.request.user.is_authenticated:
             return ['common/index_logged_in.html']
         else:
@@ -68,7 +70,7 @@ class DashboardView(ListView, FormView):
         return queryset
 
 
-class AddPostView(CreateView):
+class AddPostView(LoginRequiredMixin, CreateView):
     model = Post
     form_class = PostCreateForm
     template_name = 'posts/add-post.html'
