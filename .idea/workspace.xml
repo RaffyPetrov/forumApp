@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ce96bb-833f-4aa0-b136-8e74d483af79" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/accounts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/accounts/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/accounts/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumApp/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/accounts/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forumApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/forumApp/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +56,7 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Django Server.forumApp.executor": "Run",
+    "Django Server.forum_app.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
     "Notification.DoNotAsk-Database detector": "true",
     "Python.decorators.executor": "Run",
@@ -89,7 +87,7 @@
       <recent name="C:\Users\swift\OneDrive\Desktop\forumApp\forumApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.forumApp">
+  <component name="RunManager" selected="Django Server.forum_app">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="forumApp" />
       <option name="ENV_FILES" value="" />
@@ -213,7 +211,7 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="forumApp" type="Python.DjangoServer" factoryName="Django server">
+    <configuration name="forum_app" type="Python.DjangoServer" factoryName="Django server">
       <module name="forumApp" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -250,7 +248,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django Server.forumApp" />
+      <item itemvalue="Django Server.forum_app" />
       <item itemvalue="Python.decorators" />
       <item itemvalue="Python.views" />
     </list>
@@ -308,7 +306,9 @@
       <workItem from="1731426463058" duration="1843000" />
       <workItem from="1731488723568" duration="3234000" />
       <workItem from="1731494289035" duration="10029000" />
-      <workItem from="1731588155433" duration="1538000" />
+      <workItem from="1731588155433" duration="1607000" />
+      <workItem from="1731589800688" duration="3000" />
+      <workItem from="1732104626898" duration="1620000" />
     </task>
     <servers />
   </component>
