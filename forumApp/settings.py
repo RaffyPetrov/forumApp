@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "forumApp.posts",
     'crispy_forms',
     'crispy_bootstrap4',
-    'forumApp.accounts.apps.AccountsConfig'
+    'forumApp.accounts.apps.AccountsConfig',
+    'forumApp.common.apps.CommonConfig'
 
 ]
 
@@ -54,6 +55,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'forumApp.middlewares.measure_time_execution',
+    'forumApp.middlewares.MeasureTimeExecution'
 ]
 
 ROOT_URLCONF = 'forumApp.urls'

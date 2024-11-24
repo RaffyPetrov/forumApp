@@ -17,7 +17,7 @@ class DisableFieldsMixin(forms.Form):
 
 
 class TimeRestrictedMixin:
-    start_time = time(10, 0)
+    start_time = time(1, 0)
     end_time = time(23, 0)
     forbidden_message = "Access restricted at this time. Try again later!"
 
